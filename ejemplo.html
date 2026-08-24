@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hola Mundo</title>
+</head>
+
+<body>
+    <p>Elegir capacidad de memoria:</p>
+    <datalist id="ListaUsb">
+        <option value="8"></option>
+    </datalist>
+
+    <form action="">
+        <label for="campoNombre">NOMBRE:</label>
+        <INput type="text" name="" id="campoNombre"></INput>
+    </form>
+
+    <fieldset>
+        <legend>Tipos de Formularios:</legend>
+        <form action="">
+            <input   type="button" value="Click me" onclick="alert('Holi')" />
+            <input type="checkbox"><label for="">Holi</label>
+            <input type="radio" name="jornada"><label for="">Tarde</label>
+            <input type="radio" name="jornada"><label for="">Noche</label>
+            <br>
+            <input type="submit" name="" id="">
+            <br>
+            <label for="">Contraseña:</label>
+            <input type="password" name="" id=""></input>
+            <br>
+            <label for="">Fecha:</label>
+            <input type="date" name="" id=""></input>
+            <br>
+            <label for="">Fecha:</label>
+            <input type="datetime-local" name="" id=""></input>
+            <br>
+            <label for="">Email:</label>
+            <input type="email" name="" id=""></input>
+            <br>
+            <label for="">File:</label>
+            <input type="file" name="" id="" accept=".pdf"></input>
+            <br>
+            <label for="">Hidden:</label>
+            <input type="hidden" name="" id=""></input>
+
+
+            <br>
+            <label for="">Range:</label>
+            <input type="range" name="Holi" id="experience" min="0" max="100" value="3" list="marcas"></input>
+            <output for="experience">3</output>
+            <datalist id="marcas">
+                <option value="0" label="0%"></option>
+                <option value="25"></option>
+                <option value="50" label="Mitad"></option>
+                <option value="75"></option>
+                <option value="100" label="100%"></option>
+            </datalist>
+
+
+            <br>
+            <label for="">Imagen:</label>
+            <input type="image" name="" id=""></input>
+
+            <br>
+            <label for="">Numero:</label>
+            <input type="number" min="5" max="15">
+            <br>
+
+            <label for="">Time:</label>
+            <input type="time">
+            <br>
+
+            <label for="">Tel:</label>
+            <input type="tel" placeholder="+57 3112121212">
+            <br>
+
+            <label for="">Month:</label>
+            <input type="month" >
+            <br>
+
+
+            <br>            
+            <label for="">Reset:</label>
+            <input type="reset">
+        </form>
+    </fieldset>
+
+    <form action="">
+        <input type="search" name="consulta" placeholder="Buscar..." autocomplete="off" results="5">
+
+        <input type="number" name="edad" min="10" max="18" step="1" required>
+
+
+
+    </form>
+
+</body>
+
+</html>
