@@ -5,10 +5,30 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Inscripcion a Curso Presencial</title>
+    <style>
+        *{
+            color: blue;
+        }
+
+        legend{
+            background-color: rgb(232, 162, 162);
+        }
+
+        .importante{
+            background-color: chartreuse;
+        }
+
+        #titulo{
+            color: rgb(236, 15, 15);
+        }
+
+
+
+    </style>
 </head>
 
 <body>
-    <h1>Formulario de inscripcion a curso presencial</h1>
+    <h1 id="titulo">Formulario de inscripcion a curso presencial</h1>
     <p>Completa la siguiente informacion para reservar tu plaza en el curso de Diseno Web Inicial.</p>
 
     <form action="/inscripciones" method="post" enctype="multipart/form-data" autocomplete="on">
@@ -18,19 +38,19 @@
             <legend>Datos personales</legend>
 
             <p>
-                <label for="first-name">Nombre:</label><br>
+                <label class="importante" for="first-name">Nombre:</label><br>
                 <input type="text" id="first-name" name="first_name" required minlength="2" maxlength="40"
                     autocomplete="given-name" placeholder="Ej. Laura">
             </p>
 
             <p>
-                <label for="last-name">Apellidos:</label><br>
+                <label class="importante" for="last-name">Apellidos:</label><br>
                 <input type="text" id="last-name" name="last_name" required minlength="2" maxlength="60"
                     autocomplete="family-name" placeholder="Ej. Gomez Ruiz">
             </p>
 
             <p>
-                <label for="dni">Documento de identidad:</label><br>
+                <label class="importante" for="dni">Documento de identidad:</label><br>
                 <input type="text" id="dni" name="dni" required minlength="8" maxlength="15"
                     pattern="[A-Za-z0-9-]{8,15}" placeholder="Ej. 12345678A">
             </p>
@@ -49,16 +69,16 @@
         </fieldset>
 
         <fieldset>
-            <legend>Contacto</legend>
+            <legend >Contacto</legend>
 
             <p>
-                <label for="email">Correo electronico:</label><br>
+                <label class="importante" for="email">Correo electronico:</label><br>
                 <input type="email" id="email" name="email" required autocomplete="email"
                     placeholder="correo@ejemplo.com">
             </p>
 
             <p>
-                <label for="phone">Telefono movil:</label><br>
+                <label class="importante" for="phone">Telefono movil:</label><br>
                 <input type="tel" id="phone" name="phone" required autocomplete="tel"
                     pattern="[0-9+ ]{9,15}" placeholder="Ej. +34 600 123 456">
             </p>
@@ -70,7 +90,7 @@
             </p>
 
             <p>
-                <label for="city">Ciudad:</label><br>
+                <label class="importante" for="city">Ciudad:</label><br>
                 <input type="text" id="city" name="city" required maxlength="50" autocomplete="address-level2"
                     list="city-options" placeholder="Selecciona o escribe una ciudad">
                 <datalist id="city-options">
@@ -92,7 +112,7 @@
             <legend>Informacion academica</legend>
 
             <p>
-                <label for="education-level">Nivel de estudios:</label><br>
+                <label class="importante" for="education-level">Nivel de estudios:</label><br>
                 <select id="education-level" name="education_level" required>
                     <option value="">Selecciona una opcion</option>
                     <option value="secondary">Secundaria</option>
@@ -134,7 +154,7 @@
             <legend>Documentacion y necesidades</legend>
 
             <p>
-                <label for="cv">Adjuntar curriculum:</label><br>
+                <label class="importante" for="cv">Adjuntar curriculum:</label><br>
                 <input type="file" id="cv" name="cv" accept=".pdf,.doc,.docx">
             </p>
 
