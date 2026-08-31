@@ -1,8 +1,18 @@
 .a {
-    border-color: blue;
+    border-color: rgb(55, 255, 0);
     border-style: solid; 
-    border-collapse: separate; 
+    border-collapse: collapse; 
     
+}
+
+th{
+    border-color: yellow;
+    border: solid;
+}
+td{
+    border: solid 1px;
+    border-color: yellow;
+
 }
 .b { border-collapse: collapse; }
 

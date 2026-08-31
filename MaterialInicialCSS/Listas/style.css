@@ -2,3 +2,7 @@
 .b {list-style-type: square;}
 .c {list-style-type: upper-roman;}
 .d {list-style-type: lower-alpha;}
+
+ul.a { list-style: square o; }
+ul.b { list-style: circle inside; }
+

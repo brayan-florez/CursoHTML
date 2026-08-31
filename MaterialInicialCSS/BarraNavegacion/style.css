@@ -7,15 +7,20 @@
 header{
     position: fixed;
     width: 100%;
-    height: 70px;  
+    height: 200px;  
     background-color: #F7F9FA;
 }
 nav{
     max-width: 1024px;
     margin: 0 auto;
 }
-header img{
-    padding: 18px 10px;
+header img{ 
+    display:flex;
+    transition: color 0.3s ease, transform 0.3s ease ;
+    }
+header img:hover{
+    opacity: 0.5;
+}
 }
 nav ul{
     float: right;
@@ -27,10 +32,16 @@ nav li{
     list-style-type: none;
     padding: 0px;
     display: inline;
+    border: 
   }
 nav li a{
     font-size: 1em;
     text-decoration: none;
     line-height: 70px;
     padding: 15px 10px;
+    
+}
+
+a{
+    padding: ;
 }
