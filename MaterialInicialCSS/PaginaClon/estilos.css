@@ -1,0 +1,174 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+  background-color: #f4f4f4;
+}
+
+.main-header {
+  background-color: #ffffff;
+  border-bottom: 1px solid #e0e0e0;
+  padding: 10px 40px;
+}
+
+.header-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 1px;
+}
+
+.logo a img{
+    width: 120px;
+    height: 40px;
+}
+
+.brand-dell {
+  color: #0076ce; 
+  letter-spacing: -1px;
+}
+
+.brand-tech {
+  color: #333333;
+  font-weight: normal;
+  font-size: 18px;
+}
+
+.user-nav ul {
+  display: flex;
+  list-style: none;
+  gap: 20px;
+}
+
+.user-nav a {
+  text-decoration: none;
+  color: #555555;
+  font-size: 13px;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.user-nav a:hover {
+  color: #0076ce;
+}
+
+.arrow {
+  font-size: 10px;
+  color: #777;
+}
+
+
+.header-bottom {
+  padding-top: 4px;
+}
+
+.main-nav ul {
+  display: flex;
+  list-style: none;
+  gap: 25px;
+}
+
+.main-nav a {
+  text-decoration: none;
+  color: #333333;
+  font-size: 14px;
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.main-nav a:hover {
+  color: #0076ce;
+}
+
+.hero-banner{
+    width: 100%;
+    height: 480px;
+    background-image: url('hero-banner-img.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;   
+    display: flex; 
+    align-items: center;
+    padding-left: 80px;
+}
+
+.hero-content{color: #ffffff;
+    max-width: 420px;
+}
+
+.tagline{
+    display: block;
+    font-size: 11px;
+    font-weight: bold;
+    letter-spacing: 1.5px;
+    margin-bottom: 18px;
+}
+
+.hero-content h1{
+    font-size: 30px;
+    font-weight: 300;
+    line-height: 1.35;
+}
+
+/* Contenedor relativo */
+.dropdown-container {
+  position: relative;
+  display: inline-block;
+  padding-bottom: 10px; /* Margen invisible para evitar que se cierre al mover el cursor */
+}
+
+/* Enlace/Botón principal */
+.dropdown-trigger {
+  text-decoration: none;
+  color: #333;
+  font-size: 14px;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  padding: 8px 12px;
+}
+
+/* Oculto por defecto */
+.dropdown-card {
+  display: none;
+  position: absolute;
+  top: 100%;
+  right: 0;
+  width: 310px;
+  background: #ffffff;
+  border: 1px solid #cccccc;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  padding: 20px;
+  z-index: 100;
+}
+
+/* REGLA CLAVE: Mostrar al pasar el mouse por el contenedor */
+.dropdown-container:hover .dropdown-card {
+  display: block;
+}
+
+/* Cambiar estilo del botón al pasar el mouse */
+.dropdown-container:hover .dropdown-trigger {
+  background-color: #f4f4f4;
+}
+
+/* Estilos de texto y botones internos */
+.dropdown-card h3 { font-size: 18px; font-weight: normal; margin-bottom: 12px; color: #333; }
+.dropdown-card .subtitle { font-size: 13px; color: #555; margin-bottom: 8px; }
+.features-list { padding-left: 16px; margin-bottom: 16px; font-size: 12px; color: #555; }
+.features-list li { margin-bottom: 4px; }
+
+.actions { display: flex; flex-direction: column; gap: 8px; }
+.btn { text-align: center; padding: 8px; font-size: 13px; text-decoration: none; border-radius: 2px; }
+.btn-primary { background: #0066d4; color: #ffffff; }
+.btn-primary:hover { background: #0052aa; }
+.btn-outline { background: #ffffff; color: #0066d4; border: 1px solid #0066d4; }
+.btn-outline:hover { background: #f0f7ff; }
