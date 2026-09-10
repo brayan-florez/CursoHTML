@@ -36,7 +36,6 @@ body {
   display: flex;
   list-style: none;
   gap: 15px;
-  align-items: center;
 }
 
 .user-nav a {
@@ -62,7 +61,6 @@ body {
 .dropdown-container {
   position: relative;
 }
-
 
 .dropdown-card {
   display: none; 
@@ -92,6 +90,7 @@ body {
   font-weight: bold;
   color: #333333;
   margin-bottom: 12px;
+  justify-content: left;
 }
 
 .dropdown-card .subtitle {
@@ -108,16 +107,18 @@ body {
   color: #555555;
   line-height: 1.5;
   flex-direction: column;
+  text-align: left;  
 }
 
 .features-list li {
-  margin-bottom: 6px;
+  margin-bottom: px;
   }
 
 .actions {
   display: flex;
   flex-direction: column;
   gap: 8px;
+  
     
 }
 
