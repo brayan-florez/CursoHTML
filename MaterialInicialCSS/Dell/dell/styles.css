@@ -90,8 +90,7 @@ body {
   font-weight: bold;
   color: #333333;
   margin-bottom: 12px;
-  justify-content: left;
-}
+  }
 
 .dropdown-card .subtitle {
   font-size: 13px;
@@ -117,24 +116,13 @@ body {
 .actions {
   display: flex;
   flex-direction: column;
-  gap: 8px;
-  
-    
-}
-
-.btn {
-  display: block;
-  text-align: center;
-  padding: 8px;
-  font-size: 13px;
-  text-decoration: none;
-  border-radius: 2px;
+  gap: 8px;    
 }
 
 .btn-primary {
   background-color: #0066d4;
   color: #ffffff;
-}
+ }
 
 .btn-primary:hover {
   background-color: #0052aa;
