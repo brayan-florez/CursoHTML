@@ -105,51 +105,33 @@
 
                     <!--Fin modal-->
 
-</body>
 
-</html>
                 </div>
             </div>
         </nav>
     </header>
-
-    <section>
-        <div>
-            <h1>Lo que ofrecemos</h1>
-        </div>
-        <div class="container mt-3">
-            <div class="card" style="width:400px">
-                <img class="card-img-top" src="../bootstrap4/img_avatar1.png" alt="Card image" style="width:100%">
-                <div class="card-body">
-                    <h4 class="card-title">Rutinas personalizadas</h4>
-                    <p class="card-text">Entrenamientos adaptados a tu nivel, objetivos y equipo disponible.</p>
-                </div>
+    <div class="container mt-3">
+        <h2>Registrarse</h2>
+        <form action="/action_page.php">
+            <div class="mb-3 mt-3">
+                <label for="email">Email:</label>
+                <input type="email" class="form-control" id="email" placeholder="Ingrese email" name="email">
             </div>
-            <div class="card" style="width:400px">
-                <img class="card-img-top" src="../bootstrap4/img_avatar1.png" alt="Card image" style="width:100%">
-                <div class="card-body">
-                    <h4 class="card-title">Planes de dieta</h4>
-                    <p class="card-text">Nutrición basada en tus metas: volumen, definición o mantenimiento.</p>
-                </div>
+            <div class="mb-3">
+                <label for="pwd">Contraseña:</label>
+                <input type="password" class="form-control" id="pwd" placeholder="Ingrese Contraseña" name="pswd">
             </div>
-            <div class="card" style="width:400px">
-                <img class="card-img-top" src="../bootstrap4/img_avatar1.png" alt="Card image" style="width:100%">
-                <div class="card-body">
-                    <h4 class="card-title">Seguimiento de progreso</h4>
-                    <p class="card-text">Visualiza tu evolución con métricas claras y gráficas detalladas.</p>
-                </div>
+            <div class="mb-3">
+                <label for="#">Nombre:</label>
+                <input type="password" class="form-control" id="pwd" placeholder="Ingrese Nombre" name="pswd">
             </div>
-            <div class="card" style="width:400px">
-                <img class="card-img-top" src="../bootstrap4/img_avatar1.png" alt="Card image" style="width:100%">
-                <div class="card-body">
-                    <h4 class="card-title">Planificacion semanal</h4>
-                    <p class="card-text">Organiza tu semana con recordatorios y estructura tu entrenamiento.</p>
-                </div>
+            <div class="form-check mb-3">
+                <label class="form-check-label">
+                    <input class="form-check-input" type="checkbox" name="remember"> Remember me
+                </label>
             </div>
-        </div>
-
-    </section>
-
+            <button type="submit" class="btn btn-primary">Submit</button>
+        </form>
+    </div>
 </body>
-
 </html>
