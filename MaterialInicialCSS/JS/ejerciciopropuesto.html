@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <script>
+        let subtotal = 85.50;
+        let impuesto= 0.08;
+        let propina = 0;
+
+        let servicio = prompt("Elija la propina que desea dar:\n 1. para 20%, 2. para 15%")
+        
+        if (servicio==1){
+            propina = 0.2
+        }
+        else if(servicio==2){
+            propina = 0.15
+        }
+        else{
+            alert("Valor inválido")
+        }
+        
+        let total = subtotal*(1+impuesto+propina)
+
+        console.log('El total de la compra con propina de buen servicio es: ', total)
+        console.log('El total de la compra con propina de excelente servicio es: ', total)
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

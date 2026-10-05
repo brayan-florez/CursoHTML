@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+
+
+</head>
+
+<body>
+
+    <script>
+
+        //los tipos de funciones en JS
+        //Los retornos
+
+        dividir((sumar(sumar(),sumar())/4))
+        
+
+        
+        function sumar() {
+            let a = parseInt(prompt("Ingrese el primer número: "));
+            let b = parseInt(prompt("Ingrese el segundo número: "));
+            return a + b
+            alert (a + b)
+        }
+
+        function multiplos() {
+            let a = parseInt(prompt("Ingrese el primer número: "));
+            let b = parseInt(prompt("Ingrese el segundo número: "));
+            if (b % a === 0) {
+                alert("B es múltiplo de A")
+            }
+            else {
+                alert("B NO es múltiplo de A")
+
+            }
+        }
+
+        function palabras() {
+            let a = prompt("Ingrese la primera palabra: ");
+            let b = prompt("Ingrese la segunda palabra: ");
+            alert(a + b)
+        }
+
+        function dividir() {
+            let a = parseInt(prompt("Ingrese el primer número: "));
+            let b = parseInt(prompt("Ingrese el segundo número: "));
+            return a/b
+        }
+
+        
+
+        
+        
+
+
+
+
+
+
+    </script>
+
+</body>
+
+</html>
