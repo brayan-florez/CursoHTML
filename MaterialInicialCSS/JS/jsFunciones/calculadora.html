@@ -4,29 +4,56 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <script src="scriptCalculadora.js"></script>
 </head>
 <body>
-
     <div>
-        Valor 1: <input type="text" id="v1">
-        Valor 2: <input type="text" id="v2">
-        Resultado: <input type="text">
-
         
-    
+        valor 1:<input type="text" id="v1">
+        valor 2:<input type="text" id="v2">
+        resultado:<input type="text" id="r" disabled>
+            
         <br><br>
 
-        <button id="btnSumar">SUMA</button>
-        <button></button>
-        <button></button>
-        <button></button>
-        <button></button>
+        <button onclick="sumar()">SUMA</button>
+        <button onclick="restar()">RESTA</button>
+        <button onclick="multiplicar()">MULTIPLICACION</button>
+        <button onclick="dividir()">DIVISION</button>
+        <button onclick="potenciacion()">POTENCIACION</button>
+        <button onclick="raiz()">RAIZ</button>
+        <button onclick="multiplo()">MULTIPLO</button>
+        <button onclick="comparar()">COMPARAR</button>
+        
     </div>
 
-    <br><br>
+    <br><br><br><br>
 
+    <div>
 
-    
+        Texto 1:<input type="text" id="texto1">
+        Texto 2:<input type="text" id="texto2">
+        resultado:<input type="text" id="rTexto" disabled>
+
+        <br><br>
+
+        <button onclick="compararCadenas()">COMPARAR</button>
+        <button onclick="contarCaracter()">CONTAR</button>
+        <button onclick="quitarEspacios()">QUITAR ESPACIOS</button>
+        <button onclick="insertarCadena()">INSERTAR</button>
+    </div>
+
+    <br><br><br><br>
+
+    <div>
+
+        Ingrese los números separados por comas:<input type="text" id="vector" placeholder="Ejemplo: 2,4,6,8,10">
+        resultado:<input type="text" id="rVector" disabled>
+        <br><br>
+
+        <button onclick="crearVector()">CREAR ARREGLO</button>
+        <button onclick="sumarVector()">SUMAR ARREGLO</button>
+        <button onclick="multiplicarPares()">MULTIPLICAR PARES</button>
+    </div>
+
 </body>
+    <script src="scriptCalculadora.js"></script>
 </html>
