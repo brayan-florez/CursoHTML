@@ -1,59 +1,113 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Calculadora Multipropósito</title>
+    <link rel="stylesheet" href="estilos.css">
 </head>
 <body>
-    <div>
-        
-        valor 1:<input type="text" id="v1">
-        valor 2:<input type="text" id="v2">
-        resultado:<input type="text" id="r" disabled>
-            
-        <br><br>
 
-        <button onclick="sumar()">SUMA</button>
-        <button onclick="restar()">RESTA</button>
-        <button onclick="multiplicar()">MULTIPLICACION</button>
-        <button onclick="dividir()">DIVISION</button>
-        <button onclick="potenciacion()">POTENCIACION</button>
-        <button onclick="raiz()">RAIZ</button>
-        <button onclick="multiplo()">MULTIPLO</button>
-        <button onclick="comparar()">COMPARAR</button>
-        
-    </div>
+    <header class="header">
+        <h1>Calculadora <span>Multipropósito</span></h1>
+        <p>Operaciones Matemáticas, Cadenas de Texto y Vectores</p>
+    </header>
 
-    <br><br><br><br>
+    <main class="contenedor-principal">
 
-    <div>
+        <!-- OPERACIONES BÁSICAS -->
+        <section class="tarjeta">
+            <div class="tarjeta-header">
+                <h2>01. Operaciones Básicas</h2>
+            </div>
 
-        Texto 1:<input type="text" id="texto1">
-        Texto 2:<input type="text" id="texto2">
-        resultado:<input type="text" id="rTexto" disabled>
+            <div class="grupo-inputs">
+                <div class="campo">
+                    <label for="v1">Valor 1</label>
+                    <input type="text" id="v1" placeholder="Ej: 15.5" oninput="soloNumeros(this)">
+                </div>
 
-        <br><br>
+                <div class="campo">
+                    <label for="v2">Valor 2</label>
+                    <input type="text" id="v2" placeholder="Ej: 4" oninput="soloNumeros(this)">
+                </div>
 
-        <button onclick="compararCadenas()">COMPARAR</button>
-        <button onclick="contarCaracter()">CONTAR</button>
-        <button onclick="quitarEspacios()">QUITAR ESPACIOS</button>
-        <button onclick="insertarCadena()">INSERTAR</button>
-    </div>
+                <div class="campo campo-resultado">
+                    <label for="r">Resultado</label>
+                    <input type="text" id="r" placeholder="Esperando operación..." disabled>
+                </div>
+            </div>
 
-    <br><br><br><br>
+            <div class="grupo-botones grid-4">
+                <button onclick="sumar()">Suma (+)</button>
+                <button onclick="restar()">Resta (-)</button>
+                <button onclick="multiplicar()">Multiplicar (×)</button>
+                <button onclick="dividir()">Dividir (÷)</button>
+                <button onclick="potenciacion()">Potencia (xʸ)</button>
+                <button onclick="raiz()">Raíz (√v1)</button>
+                <button onclick="multiplo()">¿Es Múltiplo?</button>
+                <button onclick="comparar()">Comparar</button>
+            </div>
+        </section>
 
-    <div>
+        <!-- CADENAS -->
+        <section class="tarjeta">
+            <div class="tarjeta-header">
+                <h2>02. Manejo de Cadenas</h2>
+            </div>
 
-        Ingrese los números separados por comas:<input type="text" id="vector" placeholder="Ejemplo: 2,4,6,8,10">
-        resultado:<input type="text" id="rVector" disabled>
-        <br><br>
+            <div class="grupo-inputs">
+                <div class="campo">
+                    <label for="texto1">Texto 1</label>
+                    <input type="text" id="texto1" placeholder="Ingrese el texto principal">
+                </div>
 
-        <button onclick="crearVector()">CREAR ARREGLO</button>
-        <button onclick="sumarVector()">SUMAR ARREGLO</button>
-        <button onclick="multiplicarPares()">MULTIPLICAR PARES</button>
-    </div>
+                <div class="campo">
+                    <label for="texto2">Texto 2 / Carácter</label>
+                    <input type="text" id="texto2" placeholder="Texto secundario o carácter">
+                </div>
 
-</body>
+                <div class="campo campo-resultado">
+                    <label for="rTexto">Resultado</label>
+                    <input type="text" id="rTexto" placeholder="Esperando operación..." disabled>
+                </div>
+            </div>
+
+            <div class="grupo-botones grid-2">
+                <button onclick="compararCadenas()">Comparar Longitud</button>
+                <button onclick="contarCaracter()">Contar Carácter</button>
+                <button onclick="quitarEspacios()">Quitar Espacios</button>
+                <button onclick="insertarCadena()">Insertar en Mitad</button>
+            </div>
+        </section>
+
+        <!-- VECTORES ó ARREGLOS -->
+        <section class="tarjeta">
+            <div class="tarjeta-header">
+                <h2>03. Operaciones con Vectores</h2>
+            </div>
+
+            <div class="grupo-inputs">
+                <div class="campo">
+                    <label for="vector">Números enteros separados por coma</label>
+                    <input type="text" id="vector" placeholder="Ejemplo: 2,4,6,8,10" oninput="soloNumerosYComas(this)">
+                </div>
+
+                <div class="campo campo-resultado">
+                    <label for="rVector">Resultado</label>
+                    <input type="text" id="rVector" placeholder="Esperando arreglo..." disabled>
+                </div>
+            </div>
+
+            <div class="grupo-botones grid-3">
+                <button class="btn-primario" onclick="crearVector()">Crear Arreglo</button>
+                <button onclick="sumarVector()">Sumar Arreglo</button>
+                <button onclick="multiplicarPares()">Multiplicar Pares</button>
+            </div>
+        </section>
+
+    </main>
+
     <script src="scriptCalculadora.js"></script>
+</body>
 </html>
