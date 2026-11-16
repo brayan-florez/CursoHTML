@@ -1,0 +1,176 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: #0f0f0f;
+    color: #ffffff;
+    min-height: 100vh;
+    padding-bottom: 40px;
+}
+
+/* Encabezado */
+.header {
+    background-color: #161616;
+    border-bottom: 3px solid #ff6b00;
+    text-align: center;
+    padding: 25px 20px;
+    margin-bottom: 35px;
+}
+
+.header h1 {
+    font-size: 2rem;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+.header h1 span {
+    color: #ff6b00;
+}
+
+.header p {
+    color: #b3b3b3;
+    font-size: 0.95rem;
+    margin-top: 6px;
+}
+
+/* Contenedor de tarjetas */
+.contenedor-principal {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
+    gap: 25px;
+}
+
+/* Tarjetas */
+.tarjeta {
+    background-color: #1a1a1a;
+    border: 1px solid #2e2e2e;
+    border-radius: 12px;
+    padding: 25px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.5);
+    transition: transform 0.2s ease, border-color 0.2s ease;
+}
+
+.tarjeta:hover {
+    border-color: #ff6b00;
+    transform: translateY(-3px);
+}
+
+.tarjeta-header {
+    border-bottom: 1px solid #2e2e2e;
+    padding-bottom: 12px;
+    margin-bottom: 20px;
+}
+
+.tarjeta-header h2 {
+    font-size: 1.2rem;
+    color: #ff6b00;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+/* Inputs */
+.grupo-inputs {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-bottom: 22px;
+}
+
+.campo {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+
+.campo label {
+    font-size: 0.85rem;
+    font-weight: 600;
+    color: #d9d9d9;
+}
+
+.campo input {
+    background-color: #111111;
+    border: 1px solid #383838;
+    border-radius: 8px;
+    padding: 12px 14px;
+    color: #ffffff;
+    font-size: 1rem;
+    outline: none;
+    transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.campo input:focus {
+    border-color: #ff6b00;
+    box-shadow: 0 0 0 3px rgba(255, 107, 0, 0.2);
+}
+
+/* Campo de Resultado */
+.campo-resultado input:disabled {
+    background-color: #242424;
+    border-color: #ff6b00;
+    color: #ff8c38;
+    font-weight: bold;
+    cursor: not-allowed;
+}
+
+/* Botones */
+.grupo-botones {
+    display: grid;
+    gap: 10px;
+}
+
+.grid-4 {
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.grid-2 {
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.grid-3 {
+    grid-template-columns: 1fr;
+}
+
+button {
+    background-color: #262626;
+    color: #ffffff;
+    border: 1px solid #3d3d3d;
+    border-radius: 8px;
+    padding: 12px 10px;
+    font-size: 0.85rem;
+    font-weight: 600;
+    cursor: pointer;
+    text-transform: uppercase;
+    transition: all 0.2s ease;
+}
+
+button:hover {
+    background-color: #ff6b00;
+    border-color: #ff6b00;
+    color: #ffffff;
+}
+
+button:active {
+    transform: scale(0.97);
+}
+
+/* Botón destacado para Crear Arreglo */
+.btn-primario {
+    background-color: #ff6b00;
+    border-color: #ff6b00;
+    color: #ffffff;
+}
+
+.btn-primario:hover {
+    background-color: #e05e00;
+}
